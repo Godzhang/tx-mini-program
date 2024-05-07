@@ -2,6 +2,12 @@
   padding: 20px;
 }
 .task-list {}
-.task-input {
-
+.task-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .task-input {
+    border: 1px solid #333;
+    margin-right: 30px;
+  }
 }
