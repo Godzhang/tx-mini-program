@@ -46,7 +46,7 @@ export default function Index() {
           className="task-input"
           placeholder="Add task"
           clearable
-          autoFocus
+          // autoFocus
           value={newTask}
           onChange={(s) => setNewTask(s)}
         />
