@@ -5,7 +5,6 @@ import prodConfig from "./prod";
 
 const isH5 = process.env.TARO_ENV === "h5";
 const designWidth = isH5 ? 750 : 640;
-console.log("designWidth:", designWidth);
 // const isWeapp = process.env.TARO_ENV === "weapp";
 // const isAlipay = process.env.TARO_ENV === "alipay";
 

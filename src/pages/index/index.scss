@@ -1,13 +1,29 @@
 .container {
+  position: relative;
   padding: 20px;
 }
-.task-list {}
-.task-input-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .task-input {
-    border: 1px solid #333;
-    margin-right: 30px;
-  }
+// .task-list {}
+// .task-input-box {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .task-input {
+//     border: 1px solid #333;
+//     margin-right: 30px;
+//   }
+// }
+
+.text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  background-color: #08c;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: orangered;
 }
