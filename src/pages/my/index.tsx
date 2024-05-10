@@ -1,15 +1,18 @@
-import { View, Text } from "@tarojs/components";
-import { useLoad } from "@tarojs/taro";
+import { Navigator, View } from "@tarojs/components";
+import { ArrowRight } from "@nutui/icons-react-taro";
 import "./index.scss";
+import { Cell } from "@nutui/nutui-react-taro";
+import Taro from "@tarojs/taro";
 
 export default function My() {
-  useLoad(() => {
-    console.log("Page loaded.");
-  });
-
   return (
-    <View className="my">
-      <Text>my</Text>
+    <View className="my-wrapper">
+      <View className="avatar container">avatar</View>
+      <View className="settings">
+        <Navigator url="/pages/mysetting/index">
+          <Cell title="设置" extra={<ArrowRight />} />
+        </Navigator>
+      </View>
     </View>
   );
 }

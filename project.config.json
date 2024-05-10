@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "./dist/weapp/",
   "projectname": "tx-mini-program",
   "description": "taro开发的小程序",
   "appid": "wxdc154f548e6f7da3",

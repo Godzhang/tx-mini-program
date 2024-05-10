@@ -1,29 +1,34 @@
-.container {
+.index-wrapper {
   position: relative;
-  padding: 20px;
 }
-// .task-list {}
-// .task-input-box {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   .task-input {
-//     border: 1px solid #333;
-//     margin-right: 30px;
-//   }
-// }
 
-.text {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
-  background-color: #08c;
+.top-menu {
+  height: 40px;
+  background-color:chartreuse;
 }
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background-color: orangered;
+.search {
+  margin-top: 10px;
+  height: 36px;
+  background-color: aqua;
+}
+.carousel {
+  margin-top: 20px;
+  height: 240px;
+  background-color: brown;
+}
+.hot-video {
+  margin-top: 20px;
+  height: 640px;
+  background-color: coral;
+
+}
+.guess-favorite {
+  margin-top: 20px;
+  height: 160px;
+  background-color: darkcyan;
+}
+.recommand {
+  margin-top: 20px;
+  height: 400px;
+  background-color: darkmagenta;
 }
