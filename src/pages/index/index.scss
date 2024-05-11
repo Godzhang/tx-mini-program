@@ -1,3 +1,12 @@
+// 骨架屏容器
+.loading-wrapper {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+// 页面容器
 .index-wrapper {
   position: relative;
 }

@@ -2,7 +2,6 @@ import { Navigator, View } from "@tarojs/components";
 import { ArrowRight } from "@nutui/icons-react-taro";
 import "./index.scss";
 import { Cell } from "@nutui/nutui-react-taro";
-import Taro from "@tarojs/taro";
 
 export default function My() {
   return (

@@ -60,6 +60,7 @@
     "@tarojs/runtime": "3.6.28",
     "@tarojs/shared": "3.6.28",
     "@tarojs/taro": "3.6.28",
+    "ahooks": "^3.7.11",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
