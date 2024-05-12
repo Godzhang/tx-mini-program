@@ -10,34 +10,87 @@
 .index-wrapper {
   position: relative;
 }
+.container {
+  color: #fff;
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 
 .top-menu {
   height: 40px;
+}
+.top-menu-content {
   background-color:chartreuse;
 }
 .search {
   margin-top: 10px;
   height: 36px;
+}
+.search-content {
+
   background-color: aqua;
 }
 .carousel {
   margin-top: 20px;
   height: 240px;
-  background-color: brown;
+
 }
+.carousel-content {background-color: brown;}
+
 .hot-video {
   margin-top: 20px;
   height: 640px;
-  background-color: coral;
-
 }
+.hot-video-content {color: #000;}
+.hot-video-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.hot-video-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-video-item {
+  margin-top: 15px;
+  width: 49%;
+}
+.hot-video-item:nth-child(2n+1) {
+  margin-right: 2%;
+}
+.hot-video-item-thumb {
+  width: 100%;
+  height: 120px;
+  background-color: #08c;
+  border-radius: 15px;
+}
+.hot-video-item-title {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.hot-video-item-desc {
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+//
 .guess-favorite {
   margin-top: 20px;
   height: 160px;
-  background-color: darkcyan;
 }
+.guess-favorite-content {background-color: darkcyan;}
+
 .recommand {
   margin-top: 20px;
   height: 400px;
-  background-color: darkmagenta;
 }
+.recommand-content {background-color: darkmagenta;}

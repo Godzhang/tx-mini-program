@@ -68,9 +68,15 @@ dependencies:
   react:
     specifier: ^18.0.0
     version: 18.3.1
+  react-content-loader:
+    specifier: ^7.0.0
+    version: 7.0.0(react@18.3.1)
   react-dom:
     specifier: ^18.0.0
     version: 18.3.1(react@18.3.1)
+  react-loading-skeleton:
+    specifier: ^3.4.0
+    version: 3.4.0(react@18.3.1)
 
 devDependencies:
   '@babel/core':
@@ -11682,6 +11688,15 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
+  /react-content-loader@7.0.0(react@18.3.1):
+    resolution: {integrity: sha512-xaBwpO7eiJyEc4ndym+g6wcruV9W2y3DKqbw4U48QFBsv0IeAVZO+aCUb8GptlDLWM8n5zi2HcFSGlj5r+53Tg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16.0.0'
+    dependencies:
+      react: 18.3.1
+    dev: false
+
   /react-dom@18.3.1(react@18.3.1):
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -11705,6 +11720,14 @@ packages:
   /react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: true
+
+  /react-loading-skeleton@3.4.0(react@18.3.1):
+    resolution: {integrity: sha512-1oJEBc9+wn7BbkQQk7YodlYEIjgeR+GrRjD+QXkVjwZN7LGIcAFHrx4NhT7UHGBxNY1+zax3c+Fo6XQM4R7CgA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.3.1
+    dev: false
 
   /react-reconciler@0.27.0(react@18.3.1):
     resolution: {integrity: sha512-HmMDKciQjYmBRGuuhIaKA1ba/7a+UsM5FzOZsMO2JYHt9Jh8reCb7j1eDC95NOyUlKM9KRyvdx0flBuDvYSBoA==}
