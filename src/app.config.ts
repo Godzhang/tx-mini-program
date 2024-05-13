@@ -1,5 +1,11 @@
 export default defineAppConfig({
-  pages: ["pages/index/index", "pages/my/index", "pages/mysetting/index"],
+  pages: ["pages/index/index", "pages/my/index"],
+  subPackages: [
+    {
+      root: "packageMy",
+      pages: ["pages/mysetting/index"],
+    },
+  ],
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#fff",

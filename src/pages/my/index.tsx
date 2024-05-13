@@ -8,7 +8,7 @@ export default function My() {
     <View className="my-wrapper">
       <View className="avatar container">avatar</View>
       <View className="settings">
-        <Navigator url="/pages/mysetting/index">
+        <Navigator url="/packageMy/pages/mysetting/index">
           <Cell title="设置" extra={<ArrowRight />} />
         </Navigator>
       </View>
