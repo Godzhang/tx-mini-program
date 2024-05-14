@@ -2,6 +2,7 @@ import { View, Text } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 import { Cell, Switch } from "@nutui/nutui-react-taro";
+import "./testSubpackage";
 
 export default function Mysetting() {
   useLoad(() => {
