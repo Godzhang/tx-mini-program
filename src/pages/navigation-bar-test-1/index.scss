@@ -1,0 +1,26 @@
+.index-wrapper {
+  position: relative;
+  height: 100vh;
+}
+.content {
+  width: 100vw;
+  height: 3000px;
+  background-image: linear-gradient(to bottom, green, #08c);
+}
+.item {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+.left-item{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  color: #fff;
+  &-scroll {
+    color: #000;
+  }
+}
