@@ -14,6 +14,8 @@ export default defineAppConfig({
   pages: [
     "pages/navigation-bar-test-1/index",
     "pages/navigation-bar-test-2/index",
+    "pages/address-select/index",
+    "pages/search/index",
   ],
   window: {
     backgroundTextStyle: "light",

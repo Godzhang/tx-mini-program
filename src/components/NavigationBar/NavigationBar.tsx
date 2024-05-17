@@ -17,15 +17,20 @@ const NavigationBar = (props: NavigationBarProps) => {
   const { children, title, backgroundColor, statusBarBackgroundColor } = props;
 
   const sysInfo = Taro.getSystemInfoSync();
-  // const menuInfo = Taro.getMenuButtonBoundingClientRect();
+  const menuInfo = Taro.getMenuButtonBoundingClientRect();
   const { navigationBarHeight } = calcNavStatusBarHeight();
 
   const navigationBarStyle = useReactive({
     marginTop: `${Taro.pxTransform(sysInfo.statusBarHeight || 0)}`,
-    // paddingRight: `${windowWidth - menuInfo.left}px`,
+    // marginTop: `${sysInfo.statusBarHeight}px`,
     height: `${navigationBarHeight}`,
     backgroundColor: backgroundColor || "#fff",
   });
+  const rightStyle = {
+    width: Taro.pxTransform(sysInfo.windowWidth - menuInfo.left),
+    height: `${navigationBarHeight}`,
+    // flex: 0,
+  };
 
   const renderLeft = () => {
     if (props.left) {
@@ -33,7 +38,6 @@ const NavigationBar = (props: NavigationBarProps) => {
     }
     return null;
   };
-  const renderMain = () => {};
 
   return (
     <View
@@ -41,7 +45,10 @@ const NavigationBar = (props: NavigationBarProps) => {
       style={{ backgroundColor: statusBarBackgroundColor || "#fff" }}
     >
       <View className="navigation-bar" style={navigationBarStyle}>
-        {renderLeft()}
+        <View className="navigation-bar-left">{renderLeft()}</View>
+        {/* <View className="navigation-bar-main">{children || title}</View> */}
+        <View className="navigation-bar-main">{navigationBarHeight}</View>
+        <View className="navigation-bar-right" style={rightStyle}></View>
       </View>
     </View>
   );
